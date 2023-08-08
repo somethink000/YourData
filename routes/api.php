@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\api\ObjectionController;
+use App\Http\Controllers\api\DataController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,7 +14,7 @@ use App\Http\Controllers\api\ObjectionController;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-Route::resource('objections', ObjectionController::class);
+Route::resource('data_containers', DataController::class);
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();

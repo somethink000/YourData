@@ -5,7 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Objection extends Model
+class Data extends Model
 {
     use HasFactory;
+
+
+    protected $fillable =[
+
+        'title',
+        'data',
+        'data_container_id',
+        
+    ];
 }

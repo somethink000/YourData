@@ -29,7 +29,7 @@
         },
         methods: {
             loadPosts() {
-                axios.get('api/objections')
+                axios.get('api/data_containers')
                 .then(res => {
 					console.log(res.data);
                     this.posts = res.data;

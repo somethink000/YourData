@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers\Services;
 
-use App\Models\Objection;
+use App\Models\DataContainer;
 use Illuminate\Support\Str;
 
 
-class ObjectionService
+class DataContainerService
 {
-    public function All()
+    public function AllContainers()
     {
-        $result = Objection::all();
+        $result = DataContainer::all();
         return $result;
     }
     // public function GetBlog($id)
