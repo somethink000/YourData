@@ -9,15 +9,16 @@ class DataContainer extends Model
 {
     use HasFactory;
 
-    protected $fillable =[
+    protected $fillable = [
 
         'title',
         'user_id',
-        
+
     ];
 
 
-    public function GetData(){
-        return $this->hasMany(Data::class,'data_container_id');
+    public function getData()
+    {
+        return $this->hasMany(Data::class, 'data_container_id');
     }
 }

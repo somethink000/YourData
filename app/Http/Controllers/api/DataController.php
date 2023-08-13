@@ -9,18 +9,18 @@ use App\Http\Controllers\Services\DataContainerService;
 
 class DataController extends Controller
 {
+    protected $DataContainerService;
     /**
      * Display a listing of the resource.
      */
     public function __construct()
     {
-      $this->DataContainerService = app(DataContainerService::class);
+        $this->DataContainerService = app(DataContainerService::class);
     }
 
     public function index()
     {
         return $this->DataContainerService->AllContainers();
-        
     }
 
     /**

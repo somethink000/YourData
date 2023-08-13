@@ -5,8 +5,8 @@
         <div v-else>
             <data-container
                 v-for="post in posts"
-                :title="post.title"
-            />
+                :title="post.title"/>
+            
         </div>
     </div>
 </template>
@@ -16,9 +16,11 @@
  	import Spin from "../components/Spin.vue";
     import axios from 'axios';
     import DataContainer from "../components/DataContainer.vue";
+    import DataTitle from "../components/Data.vue";
     export default defineComponent({
         components: {
             Spin,
+            DataTitle,
             DataContainer
         },
         data: () => ({

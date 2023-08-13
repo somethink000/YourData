@@ -1,22 +1,15 @@
 <template>
     <div class="post_box">
         <h1>{{title}}</h1>
-        <div>
-            <data-title 
-            :title="title"
-            :data="title"
-            />
-        </div>
+
     </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue';
-import axios from 'axios';
-import DataTitle from "./Data.vue";
     export default defineComponent({
         components: {
-            DataTitle
+            
         },
         setup() {
 			return {};
