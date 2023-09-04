@@ -1,29 +1,11 @@
 <template>
 	<header class="header">
-		<ul class="header__menu nav nav-pills">
-			<li class="nav-item">
-				<router-link
-					aria-current="page"
-					class="nav-link"
-					to="/"
-					>Главная
-				</router-link>
-			</li>
-			<li class="nav-item">
-				<router-link
-					class="nav-link"
-					to="/some-page"
-					>Какая-то страница
-				</router-link>
-			</li>
-			<li class="nav-item">
-				<router-link
-					class="nav-link"
-					to="/about"
-					>О нас
-				</router-link>
-			</li>
-		</ul>
+		<p class="logo">YourData</p>
+
+		<div class="nav_icons">
+			<p>Icon</p>
+		</div>
+	
 	</header>
 </template>
 
@@ -40,11 +22,15 @@
 
 <style>
 	.header {
-		width: 992px;
+		width: 100%;
+		padding: 10px;
 		margin: 0 auto;
-		height: 100px;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
+		
+	}
+	.logo{
+		font-size: 25px;
 	}
 </style>

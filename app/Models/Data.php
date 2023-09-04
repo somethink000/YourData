@@ -10,11 +10,11 @@ class Data extends Model
     use HasFactory;
 
 
-    protected $fillable =[
+    protected $fillable = [
 
         'title',
         'data',
         'data_container_id',
-        
+
     ];
 }

@@ -1,8 +1,12 @@
 <template>
-	<PrimaryHeader />
+	
+	
+	<div class="container">
+		<PrimaryHeader />
 	<main class="main">
 		<router-view />
 	</main>
+	</div>
 </template>
 
 <script lang="ts">
@@ -15,16 +19,19 @@
 		},
 		setup() {
 			return {
-				username: 'Михаил',
 			};
 		},
 	});
 </script>
 
 <style>
-	.main {
-		width: 992px;
+	.container {
+		width: 1300px;
+		background-color: #D9D9D9;
 		margin: 0 auto;
+	}
+	.main{
 		padding: 40px;
+		padding-top: 5%;
 	}
 </style>
