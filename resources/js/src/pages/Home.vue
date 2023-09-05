@@ -1,30 +1,35 @@
-<template>
-	<h1>Data Containers:</h1>
+<template >
+  
+	<h1 class="pad">Data Containers:</h1>
     <div>
-        <spin v-if="loading"></spin>
-        <div v-else>
-            <data-container
-                v-for="post in posts"
-                :title="post.title"/>
+        <div class="data_container pad" v-for="data_container in posts">
+            <h1>GeneralData</h1>
             
+            <div class="data">
+            <p>Name:</p>
+            <p class="data_title">Deez</p>
+            </div>
+
+            <div class="data">
+            <p>Email:</p>
+            <p class="data_title">MyEmail@gay.club</p>
+            </div>
+           
         </div>
+
+        
     </div>
+
 </template>
 
 <script >
 	import { defineComponent } from 'vue';
- 	import Spin from "../components/Spin.vue";
     import axios from 'axios';
-    import DataContainer from "../components/DataContainer.vue";
-    import DataTitle from "../components/Data.vue";
     export default defineComponent({
         components: {
-            Spin,
-            DataTitle,
-            DataContainer
+        
         },
         data: () => ({
-            loading: true,
             posts: []
         }),
         mounted() {
@@ -36,9 +41,6 @@
                 .then(res => {
 					console.log(res.data);
                     this.posts = res.data;
-                    setTimeout(() => {
-                        this.loading = false;
-                    }, 500)
                 })
             }
         }
@@ -47,5 +49,19 @@
 
 
 <style>
-    
+   .pad{
+    padding: 2%;
+   }
+    .data_container{
+        width: 100%;
+        margin-top: 2%;
+        background-color: white;
+    }
+    .data{
+        margin-top: 3%;
+        margin-left: 1%;
+    }
+    .data_title{
+    font-size: 24px;
+    }
 </style>
