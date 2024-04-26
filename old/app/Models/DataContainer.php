@@ -17,7 +17,7 @@ class DataContainer extends Model
     ];
 
 
-    public function data()
+    public function datas()
     {
         return $this->hasMany(Data::class, 'data_container_id');
     }
