@@ -1,11 +1,9 @@
 <template>
-	<header class="header">
-		<p class="logo">YourData</p>
-
-		<div class="nav_icons">
-			<p>Icon</p>
-		</div>
-	
+	<header class="pb-3 mb-4 border-bottom">
+		<a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+			<img src="/images/protect.png" width="32" height="32" class="me-2" viewBox="0 0 118 94" role="img" />
+			<span class="fs-4">Your Data</span>
+		</a>
 	</header>
 </template>
 
@@ -20,17 +18,3 @@
 	});
 </script>
 
-<style>
-	.header {
-		width: 100%;
-		padding: 10px;
-		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		
-	}
-	.logo{
-		font-size: 25px;
-	}
-</style>

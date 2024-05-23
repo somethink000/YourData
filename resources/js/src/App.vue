@@ -3,10 +3,12 @@
 	
 	<div class="container">
 		<PrimaryHeader />
-	<main class="main">
-		<router-view />
-	</main>
-	<PrimaryFooter />
+
+		<main class="main">
+			<router-view />
+		</main>
+
+		<PrimaryFooter />
 	</div>
 </template>
 
@@ -26,15 +28,3 @@
 		},
 	});
 </script>
-
-<style>
-	.container {
-		width: 1300px;
-		background-color: #D9D9D9;
-		margin: 0 auto;
-		padding: 0;
-	}
-	.main{
-		padding-top: 5%;
-	}
-</style>

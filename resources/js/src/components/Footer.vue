@@ -1,6 +1,6 @@
 <template>
-	<footer class="footer">
-	<a href="#">How to use YourData in your project</a>
+	<footer class="pt-3 mt-4 text-body-secondary border-top">
+		© 2024
 	</footer>
 </template>
 
@@ -14,17 +14,3 @@
 		},
 	});
 </script>
-
-<style>
-	.footer {
-		width: 100%;
-		padding: 15px;
-		margin: 0 auto;
-		background-color: #9A9A9A;
-		display: flex;
-		align-items: center;
-
-		
-	}
-	
-</style>
