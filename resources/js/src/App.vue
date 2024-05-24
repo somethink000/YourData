@@ -1,14 +1,16 @@
 <template>
 	
 	
-	<div class="container">
-		<PrimaryHeader />
+	<div class="container vh-100 flex-column justify-content-center align-items-center">
 
-		<main class="main">
-			<router-view />
-		</main>
+			<PrimaryHeader />
 
-		<PrimaryFooter />
+			<main class="main">
+				<router-view />
+			</main>
+
+			<PrimaryFooter />
+
 	</div>
 </template>
 
